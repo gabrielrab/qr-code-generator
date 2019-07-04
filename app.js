@@ -11,6 +11,7 @@ app.get('/qrcode', (req, res)=>{
 
     res.type('png');
 
+    console.log('[qr-code] Criando código...');
     console.log('[qr-code] Código gerado com sucesso.');
 
     code.pipe(res);
